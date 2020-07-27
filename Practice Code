@@ -1,0 +1,18 @@
+def AddOne(i):
+  return(i+1)
+def AddTwo(i):
+  return(i+2)
+def MyNameNoA(name, letter):
+  newName = ""
+  l = str(letter)
+  for i in range(len(name)):
+    if name[i] != l.lower and name[i] != l.upper:
+      newName += name [i]
+  return newName
+
+running = False
+while running: 
+  n = str(input("Name: "))
+  l = str(input("letter: "))
+
+  print(MyNameNoA(n,l))
